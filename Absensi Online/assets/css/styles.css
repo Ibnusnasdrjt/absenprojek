@@ -1,0 +1,68 @@
+/* Mengatur body */
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to top, #ff4e50, #f9d423); /* Warna gradasi merah */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden; /* Menghilangkan scrollbar */
+}
+
+/* Background diperbaiki */
+.background {
+  background: url("../3dbg.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: fixed; /* Menggunakan fixed agar background penuh */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Tetap di belakang elemen lain */
+}
+
+/* Container login */
+.login-container {
+  background: rgba(255, 0, 0, 0.15); /* Blur dengan dominan merah */
+  border-radius: 25px; /* Membuat sudut melengkung lebih smooth */
+  padding: 2rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Bayangan lebih lembut */
+  backdrop-filter: blur(15px); /* Blur lebih besar */
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 0, 0, 0.2); /* Border tipis merah */
+  z-index: 1; /* Pastikan pop-up ada di atas */
+}
+
+/* Input style dalam container */
+.login-container input {
+  background: rgba(255, 255, 255, 0.3); /* Input semi-transparan */
+  border: none;
+  padding: 0.75rem;
+  border-radius: 10px; /* Sudut melengkung input */
+  color: #ffcccc; /* Teks input warna merah pucat */
+}
+
+/* Placeholder styling */
+.login-container input::placeholder {
+  color: #ffcccc; /* Placeholder warna merah pucat */
+}
+
+/* Link styling */
+.login-container a {
+  color: #ff8888; /* Link warna merah muda */
+}
+
+/* Tombol login */
+.login-container button {
+  background: #ff4e50; /* Tombol login warna merah */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px; /* Membuat tombol lebih smooth */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #d43a3d; /* Hover warna merah lebih gelap */
+}
